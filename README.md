@@ -10,6 +10,7 @@
   - 
 ### Valores do tipo Infinity
 - Identificado que o retorno do tipo Infinity ocorre quando 
+![](https://i.postimg.cc/Jz9jhjxM/infinity.png)
 
 ![](https://i.postimg.cc/MZ7nx7ky/Screenshot-2.png)
 
