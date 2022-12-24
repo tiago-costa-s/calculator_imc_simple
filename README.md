@@ -4,9 +4,9 @@
 - CSS 3
 - Java Script
 
-##Desafios
-Tratar o retorno de valores do tipo NaN
-Tratar o retorno de valores do tipo Infinity
+## Desafios
+- Tratar o retorno de valores do tipo NaN
+- Tratar o retorno de valores do tipo Infinity
 
 ![](https://i.postimg.cc/MZ7nx7ky/Screenshot-2.png)
 
