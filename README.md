@@ -1,4 +1,7 @@
 # calculator_imc_simple
+
+link: https://calculator-imc-simple-c48e2b.netlify.app/
+
 ## Tecnologias
 - HTML 5
 - CSS 3
