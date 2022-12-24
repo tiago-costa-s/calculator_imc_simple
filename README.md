@@ -6,9 +6,10 @@
 
 ## Desafios
 ### Valores do tipo NaN:
-  - Sobre o valores do tipo NaN, criei uma condicional que verifica se calculo do IMC e "is(NaN)" e igual true, caso sim a impressão do            resultado atravez do innerHTML será vazio. Caso não ele retornara o valor do IMC. 
+  - Sobre o retorno do IMC igual a NaN, criei uma condicional que verifica se calculo do IMC "is(NaN)" e igual true, caso sim a impressão do            resultado atravez do innerHTML será vazio. Caso não ele retornara o valor do IMC. 
   - 
 ### Valores do tipo Infinity
+- Identificado que o retorno do tipo Infinity ocorre quando 
 
 ![](https://i.postimg.cc/MZ7nx7ky/Screenshot-2.png)
 
