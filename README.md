@@ -10,5 +10,6 @@
   
 ### Valores do tipo Infinity
 - O retorno Infinity ocorre quando o campo altura não e preenchido pelo usuario e o campo peso recebe um valor qualquer. 
+
 ![](https://i.postimg.cc/Jz9jhjxM/infinity.png)
 
