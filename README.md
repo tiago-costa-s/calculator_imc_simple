@@ -7,6 +7,8 @@ Eu acabei de criar uma calculadora de IMC (índice de massa corporal) usando HTM
 ### Desktop
 ![](https://i.postimg.cc/MZ7nx7ky/Screenshot-2.png)
 
+![](https://i.postimg.cc/Y0rMtmg3/Screenshot-400000000000000000.png)
+
 ### Mobile
 ![](https://i.postimg.cc/nVkGn3Px/Screenshot-4.png)
 
@@ -25,3 +27,5 @@ Eu acabei de criar uma calculadora de IMC (índice de massa corporal) usando HTM
 ![](https://i.postimg.cc/Jz9jhjxM/infinity.png)
 
 #### Solução: Realizei o tratamento do resultado do tipo Infinity utilizando uma função que verifica se o resultado atraves do "isFinite()". Agora, quando o usuário insere dados faltantes, nesse cenário o programa irá retornar a mensagem “Preencha os campos corretamente”. 
+
+![](https://i.postimg.cc/9MktDHMK/isFinite.png)
