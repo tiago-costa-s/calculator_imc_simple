@@ -17,11 +17,11 @@ Eu acabei de criar uma calculadora de IMC (índice de massa corporal) usando HTM
 
 ## Desafios
 ### Valores do tipo NaN:
-  - Sobre o retorno do IMC igual a NaN, criei uma condicional que verifica se calculo do IMC "is(NaN)" e igual true, caso sim a impressão do            resultado atravez do innerHTML será vazio. Caso não ele retornara o valor do IMC. 
+  - Sobre o resultado do IMC do tipo NaN, criei uma função que verifica se calculo do IMC "isNaN()" e igual a true, caso sim a impressão do resultado atravez do innerHTML será vazio. Caso não ele retornara o valor do IMC. 
   
 ### Valores do tipo Infinity
 - O retorno Infinity ocorre quando o campo altura não e preenchido pelo usuario e o campo peso recebe um valor qualquer. 
 
 ![](https://i.postimg.cc/Jz9jhjxM/infinity.png)
 
-Solução: Consegui resolver o problema gerado, inserindo dentro da condicional o "IsFinite". Com isso agora o programa retorna uma mensagem pedido para preencher os campos corretamente ao inves de retornar "Infinity". 
+Solução: Realizei o tratamento do resultado do tipo Infinity utilizando uma função que verifica se o resultado atraves do "isFinite()". Agora, quando o usuário insere dados faltantes, nesse cenário o programa irá retornar a mensagem “Preencha os campos corretamente”. 
