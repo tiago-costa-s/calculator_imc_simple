@@ -24,3 +24,4 @@ Eu acabei de criar uma calculadora de IMC (índice de massa corporal) usando HTM
 
 ![](https://i.postimg.cc/Jz9jhjxM/infinity.png)
 
+Solução: Consegui resolver o problema gerado, inserindo dentro da condicional o "IsFinite". Com isso agora o programa retorna uma mensagem pedido para preencher os campos corretamente ao inves de retornar "Infinity". 
