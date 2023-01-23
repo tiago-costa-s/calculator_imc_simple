@@ -6,6 +6,8 @@ Eu acabei de criar uma calculadora de IMC (índice de massa corporal) usando HTM
 
 ![](https://i.postimg.cc/MZ7nx7ky/Screenshot-2.png)
 
+![](https://i.postimg.cc/nVkGn3Px/Screenshot-4.png)
+
 ## Tecnologias
 - HTML 5
 - CSS 3
