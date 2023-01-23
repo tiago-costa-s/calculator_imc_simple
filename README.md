@@ -24,4 +24,4 @@ Eu acabei de criar uma calculadora de IMC (índice de massa corporal) usando HTM
 
 ![](https://i.postimg.cc/Jz9jhjxM/infinity.png)
 
-Solução: Realizei o tratamento do resultado do tipo Infinity utilizando uma função que verifica se o resultado atraves do "isFinite()". Agora, quando o usuário insere dados faltantes, nesse cenário o programa irá retornar a mensagem “Preencha os campos corretamente”. 
+#### Solução: Realizei o tratamento do resultado do tipo Infinity utilizando uma função que verifica se o resultado atraves do "isFinite()". Agora, quando o usuário insere dados faltantes, nesse cenário o programa irá retornar a mensagem “Preencha os campos corretamente”. 
