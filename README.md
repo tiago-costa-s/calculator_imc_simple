@@ -1,4 +1,4 @@
-# calculator_imc_simple
+# Calculadora de IMC Simples
 
 link: https://calculator-imc-simple-c48e2b.netlify.app/
 
