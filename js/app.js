@@ -8,8 +8,9 @@ const result = document.querySelector("#calculator-result");
 btnCalculator.addEventListener('click', () => {
     const weightData = dataWeight.value;
     const heightData = dataHeight.value;
-    const imc = heightData / (weightData * weightData);
+    const imc = heightData / (weightData * weightData);    
     let mensage;
+    
     // Tabela de IMC
     function verifyImc() {
         if (weightData == 0 || heightData == 0) {
