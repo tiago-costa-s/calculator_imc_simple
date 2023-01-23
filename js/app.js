@@ -8,9 +8,9 @@ const result = document.querySelector("#calculator-result");
 btnCalculator.addEventListener('click', () => {
     const weightData = dataWeight.value;
     const heightData = dataHeight.value;
-    const imc = heightData / (weightData * weightData);    
+    const imc = heightData / (weightData * weightData);
     let mensage;
-    
+
     // Tabela de IMC
     function verifyImc() {
         if (weightData == 0 || heightData == 0) {
@@ -35,16 +35,19 @@ btnCalculator.addEventListener('click', () => {
     verifyImc();
 
     // Verificar dado tipo NaN
-    function verifyNaN() {
+    function verifyInfinityNaN() {
         if (isNaN(imc) == true) {
             result.innerHTML = `<h2>${mensage}</h2><p></p>`;
             console.log("Salame");
+        } else if (isFinite(imc) !== true) {
+            result.innerHTML = `<h2>${mensage}</h2><p></p>`;
+
         } else {
-            result.innerHTML = `<h2>${mensage}</h2> <p>IMC ${imc.toFixed(1)} </p>`;
+            result.innerHTML = `<h2>${mensage}</h2><p>IMC ${imc.toFixed(1)} </p>`;
         }
     }
 
-    verifyNaN();
+    verifyInfinityNaN();
 });
 
 
