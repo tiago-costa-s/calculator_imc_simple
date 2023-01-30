@@ -38,7 +38,6 @@ btnCalculator.addEventListener('click', () => {
     function verifyInfinityNaN() {
         if (isNaN(imc) == true) {
             result.innerHTML = `<h2>${mensage}</h2><p></p>`;
-            console.log("Salame");
         } else if (isFinite(imc) !== true) {
             result.innerHTML = `<h2>${mensage}</h2><p></p>`;
 
