@@ -6,10 +6,18 @@ const result = document.querySelector("#calculator-result");
 
 // Capturar os dados da Pagina
 btnCalculator.addEventListener('click', () => {
-    const weightData = dataWeight.value;
-    const heightData = dataHeight.value;
+    let weightData = dataWeight.value;
+    let heightData = dataHeight.value;
+
+    // Trando numeros que utilizam "," virgula.
+    weightData.replace(",", ".");
+    weightData = parseFloat(weightData);
+    weightData = weightData.toFixed(2);
+    heightData.replace(",", ".");
+    heightData = parseFloat(heightData);
+    heightData = heightData.toFixed(2);
+
     const imc = heightData / (weightData * weightData);
-    let mensage;
 
     // Tabela de IMC
     function verifyImc() {
@@ -31,21 +39,18 @@ btnCalculator.addEventListener('click', () => {
             }
         };
     };
-
     verifyImc();
 
     // Verificar dado tipo NaN
     function verifyInfinityNaN() {
         if (isNaN(imc) == true) {
-            result.innerHTML = `<h2>${mensage}</h2><p></p>`;
+            result.innerHTML = `<h2></h2><p>Por favor. Insira somente números válidos.</p>`;
         } else if (isFinite(imc) !== true) {
             result.innerHTML = `<h2>${mensage}</h2><p></p>`;
-
         } else {
             result.innerHTML = `<h2>${mensage}</h2><p>IMC ${imc.toFixed(1)} </p>`;
         }
     }
-
     verifyInfinityNaN();
 });
 
