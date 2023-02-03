@@ -1,23 +1,22 @@
 :root {
     --primary-text-color: #ffffff;
-    --secundary-text-color: #222c36;
-    --teste: #021520;
-    --teste1: #010d14;
-    --test2: #2475aa;
+    --secundary-text-color: #222c36;   
+    --background-color1: #010d14;
+    --background-color2: #2475aa;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+    color: var(--primary-text-color);
     font-family: Lato;
     font-weight: normal;
 }
 
 body {
     display: flex;
-    background-color: var(--teste1);
+    background-color: var(--background-color1);
     height: 100vh;
 }
 
@@ -36,8 +35,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    width: 100%;
-    max-width: 800px;   
+    width: 500px;
+    max-width: 80%;   
     border-radius: 10px;
     background-color: var(--secundary-text-color);
 }
@@ -78,7 +77,7 @@ label {
 
 #calculator-commander input[type="button"] {
     font-size: 1rem;
-    background-color: var(--test2);
+    background-color: var(--background-color2);
     border: 0;
     border-radius: 5px;
 }
@@ -97,7 +96,7 @@ label {
 
 h2 {
     font-size: 1.5rem;
-    color: var(--test2);
+    color: var(--background-color2);
     margin-bottom: 1rem;
 }
 

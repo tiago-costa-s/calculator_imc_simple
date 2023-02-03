@@ -1,6 +1,5 @@
 const dataWeight = document.querySelector("#calculator-weight");
 const dataHeight = document.querySelector("#calculator-height");
-
 const btnCalculator = document.querySelector("#btn-calculator");
 const result = document.querySelector("#calculator-result");
 
@@ -10,13 +9,14 @@ btnCalculator.addEventListener('click', () => {
     let heightData = dataHeight.value;
 
     // Trando numeros que utilizam "," virgula.
-    weightData.replace(",", ".");
-    weightData = parseFloat(weightData);
-    weightData = weightData.toFixed(2);
-    heightData.replace(",", ".");
+    weightData = weightData.replace(",", ".");
+    weightData = parseFloat(weightData);    
+    weightData = weightData.toFixed(2);    
+    heightData = heightData.replace(",", ".");
     heightData = parseFloat(heightData);
     heightData = heightData.toFixed(2);
 
+    console.log(weightData + " " + heightData);
     const imc = heightData / (weightData * weightData);
 
     // Tabela de IMC
