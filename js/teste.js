@@ -9,35 +9,35 @@ btnCalculator.addEventListener('click', () => {
     let heightData = dataHeight.value;
 
     // Trando numeros que utilizam "," virgula.
-    weightData = +weightData.replace(",", ".");
-    weightData = weightData.toFixed(2);
-    heightData = +heightData.replace(",", ".");
+    weightData = +weightData.replace(",", ".");     
+    weightData = weightData.toFixed(2); 
+    heightData = +heightData.replace(",", ".");   
     heightData = heightData.toFixed(2);
 
     console.log(weightData + " " + heightData);
     const imc = heightData / (weightData * weightData);
 
     // Tabela de IMC
-
-    if (weightData == 0 || heightData == 0) {
-        mensage = "Preencha os campos corretamente.";
-    } else {
-        if (imc < 18.5) {
-            mensage = "Abaixo do peso normal";
-        } else if (imc > 18.5 && imc <= 24.99) {
-            mensage = "Peso normal";
-        } else if (imc >= 25.0 && imc <= 29.99) {
-            mensage = "Levemente acima do peso";
-        } else if (imc >= 30.0 && imc <= 34.9) {
-            mensage = "Obesidade I";
-        } else if (imc >= 35.0 && imc <= 39.99) {
-            mensage = "Obesidade II";
+    function verifyImc() {
+        if (weightData == 0 || heightData == 0) {
+            mensage = "Preencha os campos corretamente.";
         } else {
-            mensage = "Obesidade III";
-        }
+            if (imc < 18.5) {
+                mensage = "Abaixo do peso normal";
+            } else if (imc > 18.5 && imc <= 24.99) {
+                mensage = "Peso normal";
+            } else if (imc >= 25.0 && imc <= 29.99) {
+                mensage = "Levemente acima do peso";
+            } else if (imc >= 30.0 && imc <= 34.9) {
+                mensage = "Obesidade I";
+            } else if (imc >= 35.0 && imc <= 39.99) {
+                mensage = "Obesidade II";
+            } else {
+                mensage = "Obesidade III";
+            }
+        };
     };
-
-
+    verifyImc();
 
     // Verificar dado tipo NaN
     function verifyInfinityNaN() {

@@ -1,6 +1,6 @@
 :root {
     --primary-text-color: #ffffff;
-    --secundary-text-color: #222c36;   
+    --secundary-text-color: #222c36;
     --background-color1: #010d14;
     --background-color2: #2475aa;
 }
@@ -16,27 +16,22 @@
 
 body {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--background-color1);
     height: 100vh;
-}
-
-/* Seção da Calculadora */
-#calculator-sections {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
 }
 
 /* Corpo da Calculadora */
 #calculator-body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    width: 500px;
-    max-width: 80%;   
+    justify-content: center;
+    width: 380px;
+    height: auto;
+    min-height: 400px;
+    padding: 2rem 0;
     border-radius: 10px;
     background-color: var(--secundary-text-color);
 }
@@ -48,26 +43,25 @@ h1 {
 }
 
 .input-box {
-    margin-bottom: 2rem;
+    font-size: .8rem;
 }
 
-label {
-    font-size: .8rem;
-    padding-bottom: 1rem;
+.input-box input {
+    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 #calculator-commander {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 400px;
-    height: 100%;
-    padding: 2rem 1rem;
+    width: 300px;
+    /* border: 1px solid red; */
 }
 
 #calculator-commander input {
     width: 100%;
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 1.2rem;
     background-color: var(--secundary-text-color);
     border: 0;
@@ -87,9 +81,6 @@ label {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
-    max-width: 300px;
-    height: 70%;
     text-align: center;
     font-style: italic;
 }
@@ -112,7 +103,7 @@ h2 {
         padding: 1rem;
     }
 
-    #calculator-result{
+    #calculator-result {
         padding: 1rem 0;
     }
 }
