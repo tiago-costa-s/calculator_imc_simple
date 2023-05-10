@@ -59,6 +59,7 @@ function resetInputs() {
     dataHeight.value = "";
     dataWeight.value = "";
     calculatorResult.innerHTML = ``;
+    
 }
 
 // Eventos
