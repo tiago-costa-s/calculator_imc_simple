@@ -3,7 +3,7 @@
 link: https://calculator-imc-simple-c48e2b.netlify.app/
 
 
-## Atenção!
+### Atenção!
 
 Abaixo teremos dois layouts e da calculadora a versão de baixo será a primeira versão do código. E a parte de cima será
 a versão refatora do código. Resolvi deixar dessa forma pois posso verificar e ver como o código evoluiu da sua primeira
@@ -14,10 +14,6 @@ versão para a versão atual, então todos os comentários e imagens da versão 
 ### Codigo Refatorado
 
 Realizei o refatoramento do projeto, aplicando melhorias e correções no código anterior. É interessante observar como nós evoluímos, os nossos conhecimentos e a nossa lógica, consequentemente conseguimos refletir tudo isso em nossos projetos criando códigos mais otimizados e "eficientes". Com essa nova versão fui capaz de "desacoplar" o código, criando funções independentes, e eventos separados assim facilitando o entendimento do o código e a adição de novas funções.
-
-![](https://i.postimg.cc/HsV7s99h/calc1.png)
-
-![](https://i.postimg.cc/nhBTRJgZ/calc2.jpg)
 
 ### Sobre as Atualizações
 - Adicionado o botão "Resetar.
@@ -30,6 +26,10 @@ Realizei o refatoramento do projeto, aplicando melhorias e correções no códig
 - Realizado melhorias no HTML retirado deixando o codigo mais limpo e legivel.
 - Removido alertas sobre dados invalidos e ausentes.
   
+
+![](https://i.postimg.cc/HsV7s99h/calc1.png)
+
+![](https://i.postimg.cc/nhBTRJgZ/calc2.jpg)
 
 
 
