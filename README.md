@@ -9,7 +9,7 @@ Criei uma calculadora de IMC (índice de massa corporal) usando HTML, CSS e Java
 - CSS 3
 - Java Script
 
-### Atenção!
+## Atenção!
 Abaixo teremos dois layouts e da calculadora a versão de baixo será a primeira versão do código. E a parte de cima será
 a versão refatora do código. Resolvi deixar dessa forma pois posso verificar e ver como o código evoluiu da sua primeira
 versão para a versão atual, então todos os comentários e imagens da versão inicial continuaram no aqui no readme. 
@@ -37,18 +37,18 @@ Realizei o refatoramento do projeto, aplicando melhorias e correções no códig
 
 ## Versão Antiga
 
-### Desktop
+#### Desktop
 ![](https://i.postimg.cc/Y0rMtmg3/Screenshot-400000000000000000.png)
 
-### Mobile
+#### Mobile
 ![](https://i.postimg.cc/nVkGn3Px/Screenshot-4.png)
 
 
 ## Desafios
-### Valores do tipo NaN:
+#### Valores do tipo NaN:
   - Sobre o resultado do IMC do tipo NaN, criei uma função que verifica se calculo do IMC "isNaN()" e igual a true, caso sim a impressão do resultado atravez do innerHTML será vazio. Caso não ele retornara o valor do IMC. 
   
-### Valores do tipo Infinity
+#### Valores do tipo Infinity
 - O retorno Infinity ocorre quando o campo altura não e preenchido pelo usuario e o campo peso recebe um valor qualquer. 
 
 ![](https://i.postimg.cc/Jz9jhjxM/infinity.png)
