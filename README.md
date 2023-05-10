@@ -16,15 +16,17 @@ versão para a versão atual, então todos os comentários e imagens da versão 
 Realizei o refatoramento do projeto, aplicando melhorias e correções no código anterior. É interessante observar como nós evoluímos, os nossos conhecimentos e a nossa lógica, consequentemente conseguimos refletir tudo isso em nossos projetos criando códigos mais otimizados e "eficientes". Com essa nova versão fui capaz de "desacoplar" o código, criando funções independentes, e eventos separados assim facilitando o entendimento do o código e a adição de novas funções.
 
 ### Sobre as Atualizações
-- Adicionado o botão "Resetar.
-- Agora e possivel resetar os dados dos inputs e o resultado clicando no botão "Resetar.
-- E possivel acionar o calculo do IMC precionando a tecla "Enter" quando os inputs de altura e peso estiverem selecionados.
-- O resultado da classificação/ IMC, são criados de forma dinamica atraves do Java Script.
-- Adicionado cores de acordo com o nivel de classificação/ IMC.
+- Adicionado o botão "Resetar”.
+- Agora é possível resetar os dados dos inputs e o resultado clicando no botão "Resetar".
+- É possível acionar o cálculo do IMC pressionando a tecla "Enter" quando os inputs de altura e peso estiverem selecionados.
+- O resultado da classificação/ IMC, são criados de forma dinâmica através do Javascript.
+- Adicionado cores de acordo com o nível de classificação/ IMC.
+- Agora é possível resetar o resultado quando os dados dos  input’s de  altura e peso forem apagados.
 - Realizado ajustes de estilo. 
 - Melhorias de responsividade foram aplicadas.
-- Realizado melhorias no HTML retirado deixando o codigo mais limpo e legivel.
-- Removido alertas sobre dados invalidos e ausentes.
+- Realizado melhorias no HTML retirado deixando o código mais limpo e legível.
+- Removido alertas sobre dados inválidos e ausentes.
+
   
 
 ![](https://i.postimg.cc/HsV7s99h/calc1.png)
