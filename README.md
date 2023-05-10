@@ -4,20 +4,17 @@ link: https://calculator-imc-simple-c48e2b.netlify.app/
 
 Criei uma calculadora de IMC (índice de massa corporal) usando HTML, CSS e JavaScript puro. Este projeto permite que os usuários insiram seus dados de peso e altura, e então calcula e exibe o seu IMC. Além disso, a calculadora também fornece uma classificação geral da condição de peso do usuário e uma breve explicação sobre o que o IMC significa. A interface é simples e intuitiva, o que torna fácil para qualquer pessoa usar. Eu me diverti muito criando este projeto e estou ansioso para continuar aprimorando-o no futuro. Este projeto é feito com HTML, CSS e JavaScript puro, e não precisa de nenhuma biblioteca externa.
 
-### Tecnologias
+#### Tecnologias
 - HTML 5
 - CSS 3
 - Java Script
 
-
 ### Atenção!
-
 Abaixo teremos dois layouts e da calculadora a versão de baixo será a primeira versão do código. E a parte de cima será
 a versão refatora do código. Resolvi deixar dessa forma pois posso verificar e ver como o código evoluiu da sua primeira
 versão para a versão atual, então todos os comentários e imagens da versão inicial continuaram no aqui no readme. 
 
 ## Código  Refatorado
-
 Realizei o refatoramento do projeto, aplicando melhorias e correções no código anterior. É interessante observar como nós evoluímos, os nossos conhecimentos e a nossa lógica, consequentemente conseguimos refletir tudo isso em nossos projetos criando códigos mais otimizados e "eficientes". Com essa nova versão fui capaz de "desacoplar" o código, criando funções independentes, e eventos separados assim facilitando o entendimento do o código e a adição de novas funções.
 
 ### Sobre as Atualizações
