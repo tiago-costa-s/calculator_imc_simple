@@ -10,7 +10,7 @@ a versão refatora do código. Resolvi deixar dessa forma pois posso verificar e
 versão para a versão atual, então todos os comentários e imagens da versão inicial continuaram no aqui no readme. 
 
 
-### Codigo refatorado
+### Codigo Refatorado
 
 Realizei o refatoramento do projeto, aplicando melhorias e correções no código anterior. É interessante observar como nós evoluímos, os nossos conhecimentos e a nossa lógica, consequentemente conseguimos refletir tudo isso em nossos projetos criando códigos mais otimizados e "eficientes". Com essa nova versão fui capaz de "desacoplar" o código, criando funções independentes, e eventos separados assim facilitando o entendimento do o código e a adição de novas funções.
 
@@ -27,8 +27,6 @@ Criei uma calculadora de IMC (índice de massa corporal) usando HTML, CSS e Java
 
 
 ### Desktop
-![](https://i.postimg.cc/MZ7nx7ky/Screenshot-2.png)
-
 ![](https://i.postimg.cc/Y0rMtmg3/Screenshot-400000000000000000.png)
 
 ### Mobile
