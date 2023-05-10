@@ -15,6 +15,7 @@ function pressEnter(e) {
     }
 }
 
+// Reseta os inputs e o resultado
 function resetInputs() {
     dataHeight.value = "";
     dataWeight.value = "";
@@ -66,7 +67,7 @@ function calculateImc() {
     spanH3.textContent = `${classification}`;
 }
 
-
+// Cria o template do resultado
 let spanH3;
 let spanResultImc;
 let calculatorResult = document.createElement("div");
