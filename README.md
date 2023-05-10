@@ -16,7 +16,7 @@ Realizei o refatoramento do projeto, aplicando melhorias e correções no códig
 
 ![](https://i.postimg.cc/MHLt4KzZ/calc1.jpg)
 
-![](https://i.postimg.cc/nhBTRJgZ/calc2.jpg)
+
 
 
 
