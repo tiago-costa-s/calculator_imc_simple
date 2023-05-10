@@ -12,6 +12,7 @@ function calcImc(dataHeight, dataWeight) {
     return imc;
 }
 
+
 let spanH3;
 let spanResultImc;
 let calculatorResult = document.createElement("div");
@@ -54,13 +55,18 @@ function createResult() {
     calculatorBody.appendChild(calculatorResult);
 }
 
-
 function resetInputs() {
     dataHeight.value = "";
     dataWeight.value = "";
     calculatorResult.innerHTML = ``;
-    
 }
+
+function pressEnter(event) {
+    if (event.key === "Enter") {
+        calcImc();
+    }
+}
+
 
 // Eventos
 btnCalculator.addEventListener("click", () => {
