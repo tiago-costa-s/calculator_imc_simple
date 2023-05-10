@@ -17,9 +17,17 @@ Realizei o refatoramento do projeto, aplicando melhorias e correções no códig
 
 ![](https://i.postimg.cc/HsV7s99h/calc1.png)
 
+### Sobre as Atualizações
+- Agora e possivel resetar os dados dos inputs e o resultado clicando no botão "Resetar.
+- E possivel acionar o calculo do IMC precionando a tecla Enter nos inputs de altura e peso.
+- O resultado e criado de forma dinamica atraves do Java Script.
+- Adicionado cores de acordo com o nivel de classificação/ IMC.
+- Realizado ajustes de estilo. 
+- Melhorias de responsividade foram aplicadas.
+- Realizado melhorias no HTML retirado deixando o codigo mais limpo e legivel.
+- 
 
 
-### TESTE
 ![](https://i.postimg.cc/nhBTRJgZ/calc2.jpg)
 
 ### Versão Antiga
