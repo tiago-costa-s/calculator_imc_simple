@@ -8,6 +8,8 @@ const btnReset = document.querySelector("#btn-reset");
 const calculatorBody = document.querySelector("#calculator-body");
 
 // Funções
+
+// Aciona o calculo do imc atraves da tecla "Enter".
 function pressEnter(e) {
     if (e.key === "Enter") {
         console.log("Teste", e);
@@ -15,7 +17,7 @@ function pressEnter(e) {
     }
 }
 
-// Reseta os inputs e o resultado
+// Reseta os inputs e o resultado.
 function resetInputs() {
     dataHeight.value = "";
     dataWeight.value = "";
@@ -43,33 +45,49 @@ function calculateImc() {
     let classification;
 
     if (imcInfo < 14.0) {
-        classification = `Muito abaixo do peso normal`;
+        classification = `Muito abaixo do peso`;
+        spanH3.classList.add("very-high");
+        spanResultImc.classList.add("very-high");
     }
     else if (imcInfo > 14.0 && imcInfo <= 18.5) {
-        classification = `Abaixo do peso normal`;
+        classification = `Abaixo do peso`;
+        spanH3.classList.add("average");
+        spanResultImc.classList.add("average");
     }
     else if (imcInfo > 18.5 && imcInfo <= 24.99) {
         classification = `Peso normal`;
+        spanH3.classList.add("good");
+        spanResultImc.classList.add("good");
     }
     else if (imcInfo >= 25.0 && imcInfo <= 29.99) {
         classification = `Levemente acima do peso`;
+        spanH3.classList.add("average");
+        spanResultImc.classList.add("average");
     }
     else if (imcInfo >= 30.0 && imcInfo <= 34.9) {
         classification = `Obesidade I`;
+        spanH3.classList.add("high");
+        spanResultImc.classList.add("high");
     }
     else if (imcInfo >= 35.0 && imcInfo <= 39.9) {
         classification = `Obesidade II`;
+        spanH3.classList.add("high");
+        spanResultImc.classList.add("high");
     }
     else {
         classification = `Obesidade III (Grave)`;
+        // spanH3.style.color = "red";
+        spanH3.classList.add("very-high");
+        spanResultImc.classList.add("very-high");
     }
 
     spanH3.textContent = `${classification}`;
 }
 
-// Cria o template do resultado
+// Cria o template do resultado.
 let spanH3;
 let spanResultImc;
+let pResultImc;
 let calculatorResult = document.createElement("div");
 
 function createTemplateResult() {
@@ -81,13 +99,14 @@ function createTemplateResult() {
 
     const h3 = document.createElement("h3");
     h3.id = "result-h3";
+    h3.textContent = `Classificação: `;
     result.append(h3);
 
     spanH3 = document.createElement("span");
     spanH3.id = "span-h3";
     h3.appendChild(spanH3);
 
-    const pResultImc = document.createElement("p");
+    pResultImc = document.createElement("p");
     pResultImc.id = "result-imc";
     pResultImc.textContent = `Seu IMC: `;
     result.appendChild(pResultImc);
@@ -113,6 +132,7 @@ function createTemplateResult() {
 
 
 // Eventos
+
 btnCalculator.addEventListener("click", () => {
     calculateImc();
 });

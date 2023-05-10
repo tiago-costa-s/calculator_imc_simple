@@ -104,18 +104,36 @@ h1 {
 
 #result-h3 {
     margin-bottom: .5rem;
+    font-size: 1.2rem;
 }
 
 #span-h3 {
-    font-size: 1.4rem;
+    
 }
 
 #result-imc {
     font-size: 1.5rem;
+    font-weight: 400;
+}
+
+#span-result-imc {
+    font-weight:bold;
+}
+
+.very-high {
+    color: rgb(196, 19, 19);
 }
 
 .high {
-    color: red;
+    color: rgb(196, 84, 19);
+}
+
+.average {
+    color: rgb(196, 178, 19);
+}
+
+.good {
+    color: rgb(19, 196, 93);
 }
 
 @media (max-width: 480px) {
