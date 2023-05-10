@@ -14,7 +14,7 @@ versão para a versão atual, então todos os comentários e imagens da versão 
 
 Realizei o refatoramento do projeto, aplicando melhorias e correções no código anterior. É interessante observar como nós evoluímos, os nossos conhecimentos e a nossa lógica, consequentemente conseguimos refletir tudo isso em nossos projetos criando códigos mais otimizados e "eficientes". Com essa nova versão fui capaz de "desacoplar" o código, criando funções independentes, e eventos separados assim facilitando o entendimento do o código e a adição de novas funções.
 
-![](https://i.postimg.cc/MHLt4KzZ/calc1.jpg)
+![](https://i.postimg.cc/HsV7s99h/calc1.png)
 
 
 
