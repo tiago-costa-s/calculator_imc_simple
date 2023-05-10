@@ -7,9 +7,65 @@ const btnReset = document.querySelector("#btn-reset");
 const calculatorBody = document.querySelector("#calculator-body");
 
 // Funções
+
+
+function pressEnter(e) {
+    if (e.key === "Enter") {
+        console.log("Teste", e);
+        calculateImc();
+    }
+}
+
+function resetInputs() {
+    dataHeight.value = "";
+    dataWeight.value = "";
+    calculatorResult.innerHTML = ``;
+}
+
+
 function calcImc(dataHeight, dataWeight) {
     const imc = (dataWeight / (dataHeight * dataHeight)).toFixed(1);
+    console.log("Foi acionado");
     return imc;
+}
+
+function calculateImc() {
+
+    const heightData = +dataHeight.value.replace(",", ".");
+    const weightData = +dataWeight.value.replace(",", ".");
+
+    if (!heightData || !weightData) return;
+
+    createResult();
+
+    let imcInfo = calcImc(heightData, weightData);
+    spanResultImc.textContent = `${imcInfo}`;
+
+    let classification;
+
+    if (imcInfo < 14.0) {
+        classification = `Muito abaixo do peso normal`;
+    }
+    else if (imcInfo > 14.0 && imcInfo <= 18.5) {
+        classification = `Abaixo do peso normal`;
+    }
+    else if (imcInfo > 18.5 && imcInfo <= 24.99) {
+        classification = `Peso normal`;
+    }
+    else if (imcInfo >= 25.0 && imcInfo <= 29.99) {
+        classification = `Levemente acima do peso`;
+    }
+    else if (imcInfo >= 30.0 && imcInfo <= 34.9) {
+        classification = `Obesidade I`;
+    }
+    else if (imcInfo >= 35.0 && imcInfo <= 39.9) {
+        classification = `Obesidade II`;
+    }
+    else {
+        classification = `Obesidade III (Grave)`;
+    }
+
+    spanH3.textContent = `${classification}`;
 }
 
 
@@ -55,62 +111,18 @@ function createResult() {
     calculatorBody.appendChild(calculatorResult);
 }
 
-function resetInputs() {
-    dataHeight.value = "";
-    dataWeight.value = "";
-    calculatorResult.innerHTML = ``;
-}
-
-function pressEnter(event) {
-    if (event.key === "Enter") {
-        calcImc();
-    }
-}
 
 
 // Eventos
 btnCalculator.addEventListener("click", () => {
-
-    const heightData = +dataHeight.value.replace(",", ".");
-    const weightData = +dataWeight.value.replace(",", ".");
-
-    if (!heightData || !weightData) return;
-
-    calcImc(heightData, weightData);
-
-    createResult();
-
-    let imcInfo = calcImc(heightData, weightData);
-    spanResultImc.textContent = `${imcInfo}`;
-
-    let classification;
-
-    if (imcInfo < 14.0) {
-        classification = `Muito abaixo do peso normal`;
-    }
-    else if (imcInfo > 14.0 && imcInfo <= 18.5) {
-        classification = `Abaixo do peso normal`;
-    }
-    else if (imcInfo > 18.5 && imcInfo <= 24.99) {
-        classification = `Peso normal`;
-    }
-    else if (imcInfo >= 25.0 && imcInfo <= 29.99) {
-        classification = `Levemente acima do peso`;
-    }
-    else if (imcInfo >= 30.0 && imcInfo <= 34.9) {
-        classification = `Obesidade I`;
-    }
-    else if (imcInfo >= 35.0 && imcInfo <= 39.9) {
-        classification = `Obesidade II`;
-    }
-    else {
-        classification = `Obesidade III (Grave)`;
-    }
-
-    spanH3.textContent = `${classification}`;
+    calculateImc();
 });
-
 
 btnReset.addEventListener("click", () => {
     resetInputs()
+});
+
+const inputsPressEnter = [dataHeight, dataWeight];
+inputsPressEnter.forEach((input) => {
+    input.addEventListener("keyup", pressEnter);
 });
