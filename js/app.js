@@ -12,7 +12,6 @@ const calculatorBody = document.querySelector("#calculator-body");
 // Aciona o calculo do imc atraves da tecla "Enter".
 function pressEnter(e) {
     if (e.key === "Enter") {
-        console.log("Teste", e);
         calculateImc();
     }
 }
@@ -24,9 +23,15 @@ function resetInputs() {
     calculatorResult.innerHTML = ``;
 }
 
+// Reseta somente o resultado
+function resetResult() {
+    if (dataHeight.value === "" || dataWeight.value === "") {
+        calculatorResult.innerHTML = ``;
+    }
+}
+
 function calcImc(dataHeight, dataWeight) {
     const imc = (dataWeight / (dataHeight * dataHeight)).toFixed(1);
-    console.log("Foi acionado");
     return imc;
 }
 
@@ -129,8 +134,6 @@ function createTemplateResult() {
     calculatorBody.appendChild(calculatorResult);
 }
 
-
-
 // Eventos
 
 btnCalculator.addEventListener("click", () => {
@@ -141,7 +144,14 @@ btnReset.addEventListener("click", () => {
     resetInputs()
 });
 
-const inputsPressEnter = [dataHeight, dataWeight];
-inputsPressEnter.forEach((input) => {
+const inputs = [dataHeight, dataWeight];
+inputs.forEach((input) => {
     input.addEventListener("keyup", pressEnter);
 });
+
+
+inputs.forEach((input) => {
+    input.addEventListener("input", resetResult)
+});
+
+
