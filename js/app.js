@@ -1,3 +1,4 @@
+// Seleção de elementos
 const dataHeight = document.querySelector("#calculator-height");
 const dataWeight = document.querySelector("#calculator-weight");
 
@@ -7,8 +8,6 @@ const btnReset = document.querySelector("#btn-reset");
 const calculatorBody = document.querySelector("#calculator-body");
 
 // Funções
-
-
 function pressEnter(e) {
     if (e.key === "Enter") {
         console.log("Teste", e);
@@ -21,7 +20,6 @@ function resetInputs() {
     dataWeight.value = "";
     calculatorResult.innerHTML = ``;
 }
-
 
 function calcImc(dataHeight, dataWeight) {
     const imc = (dataWeight / (dataHeight * dataHeight)).toFixed(1);
@@ -36,7 +34,7 @@ function calculateImc() {
 
     if (!heightData || !weightData) return;
 
-    createResult();
+    createTemplateResult();
 
     let imcInfo = calcImc(heightData, weightData);
     spanResultImc.textContent = `${imcInfo}`;
@@ -73,7 +71,7 @@ let spanH3;
 let spanResultImc;
 let calculatorResult = document.createElement("div");
 
-function createResult() {
+function createTemplateResult() {
 
     calculatorResult.id = "calculator-result";
 
