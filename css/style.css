@@ -32,6 +32,7 @@ body {
     height: auto;
     min-height: 400px;   
     border-radius: 10px;
+    padding: 1.5rem 0;
     background-color: var(--secundary-text-color);
 }
 
